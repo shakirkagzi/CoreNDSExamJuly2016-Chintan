@@ -1,0 +1,200 @@
+Please answer the below Data Structure Questions:
+
+why do we need data structure?
+Ans: Data structure is a particular way of storing and organizing information  in a computer  so that it can be retrieved and used most productively.
+Data structures are important for the following reasons:
+1. Data structures are used in almost every program or software system.
+2. Specific data structures are essential ingredients of many efficient algorithms, and make possible the management of huge amounts of data, such as large integrated collection of databases.
+3. Some programming languages emphasize data structures, rather than algorithms, as the key organizing factor in software design.
+
+List out the areas in which data structures are applied extensively?
+Ans:1) Compiler Design
+    2) Operating System
+    3) Database Management
+    4) Statistical Analysis package
+    5) Numerical Analysis
+    6) Graphics
+    7) Artificial Inteligence
+    8) Simulation
+*********************************************************************************************************************************************
+what is an Array?
+Ans:An array is a container object that holds a fixed number of values of a single type. The length of an array is established when the array is created.
+After creation, its length is fixed. You have seen an example of arrays already, in the main method of the "Hello World!" application.
+*********************************************************************************************************************************************
+what is the difference between the Array and ArrayList?
+Ans:
+Resizable :Array is static in size that is fixed length data structure, One can not change the length after creating the Array object.
+Primitives :  ArrayList can not contains primitive data types (like int , float , double) it can only contains Object while Array can contain both primitive data types as well as objects.
+Iterating the values : We can use iterator  to iterate through ArrayList . The iterators returned by the ArrayList class's iterator and listiterator method are fail-fast.  We can use for loop or for each loop to iterate through array .
+Type-Safety :  In Java , one can ensure Type Safety through Generics. while Array is a homogeneous data structure , thus it will contain objects of specific class or primitives of specific  data type. In array if one try to store the different data type other than the specified while creating the array object , ArrayStoreException is thrown.
+Length :  Length of the ArrayList is provided by the size() method while Each array object has the length variable which returns the length of the array
+Adding elements : We can insert elements into the arraylist object using the add() method while  in array we insert elements using the assignment operator.
+Multi-dimensional :  Array can be multi dimensional , while ArrayList is always single dimensional.
+*********************************************************************************************************************************************
+what is LinkedList?
+Ans: A linked list is a linear data structure where each element is a separate object. Each element (we will call it a node) of a list is comprising of two items - the data and a reference to the next node. The last node has a reference to null.
+ The entry point into a linked list is called the head of the list.
+*********************************************************************************************************************************************
+what is queue?
+Ans:The java.util.Queue interface is a subtype of the java.util.Collection interface. It represents an ordered list of objects just like a List , but its intended use is slightly different.
+A queue is designed to have elements inserted at the end of the queue, and elements removed from the beginning of the queue.
+*********************************************************************************************************************************************
+what is stack?
+Ans: A stack is a data structure that allows data to be inserted (a 'push' operation), and removed (a 'pop' operation).
+Many stacks also support a read ahead (a 'peek' operation), which reads data without removing it. A stack is a LIFO-queue, meaning that the last data to be inserted will be the first data to be removed
+*********************************************************************************************************************************************
+what is FIFO and LIFO?
+Ans: FIFO-Fast In Fast Out
+     LIFO-Last In Fast Out
+*********************************************************************************************************************************************
+what is the order of complexity?
+Ans:The most common metric for calculating time complexity is Big O notation. This removes all constant factors so that the running time can be estimated in relation to N as N approaches infinity.
+*********************************************************************************************************************************************
+what is the best case to search an element from an array?
+Ans:
+********************************************************************************************************************************************
+what is the worst case to search an element from an array?
+Ans:
+******************************************************************************************************************************************
+what is tree in data structure?
+Ans:First off, the Tree class itself should be a container class, and should contain elements of type Node. The Node element is a thin wrapper over the actual data content, to which we will assign the generic type T.
+So our Tree<T> will contain a collection of Node<T> objects, where T is the actual data that we want to represent in our tree structure.
+The Node is represented as an element of type T, and a List<T> of children of type Node<T>. We use a List object to hold all the children, because we are dealing with an N-ary Tree, ie, we cannot tell in advance how many children a particular Node will have.
+********************************************************************************************************************************************
+what is graph in data structure?
+Ans: Connecting the data with surver through graphical interface which can be connecting through different node.
+********************************************************************************************************************************************
+what is the difference between the HashTable and HashMap?
+Ans: There are several differences between HashMap and Hashtable in Java:
+     1)Hashtable is synchronized, whereas HashMap is not. This makes HashMap better for non-threaded applications, as unsynchronized Objects typically perform better than synchronized ones.
+     2)Hashtable does not allow null keys or values.  HashMap allows one null key and any number of null values.
+     3)One of HashMap's subclasses is LinkedHashMap, so in the event that you'd want predictable iteration order (which is insertion order by default), you could easily swap out the HashMap for a LinkedHashMap. This wouldn't be as easy if you were using Hashtable.
+********************************************************************************************************************************************
+What are the major data structures used in the following areas : RDBMS, Network data model and Hierarchical data model.
+Ans:RDBMS = Array (i.e. Array of structures)
+    Network data model = Graph
+    Hierarchical data model = Trees
+********************************************************************************************************************************************
+How HashMap works in java?
+Ans: When put() method is used to store (Key, Value) pair, HashMap implementation calls hashcode on Key object to calculate a hash that is used to find a bucket where Entry object will be stored.
+********************************************************************************************************************************************
+What is ArrayIndexOutOfBoundsException in java? When it occurs?
+Ans:Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 10 at Class.main(Student.java:7) Exceptions in java:
+An exception (or exceptional event) is a problem that arises during the execution of a program.
+Thrown to indicate that an array has been accessed with an illegal index.
+The index is either negative or greater than or equal to the size of the array.
+********************************************************************************************************************************************
+What are the different ways of copying an array into another array?
+Ans:copy Using ForLoop
+    copy Using ArraysCopyOf
+     copy Using Arraycopy
+     copy Using Clone
+********************************************************************************************************************************************
+What is difference between an array and a linked list?
+Ans: LinkedList
+     Insertions and deletions can be done easily.
+     It does not need movement of nodes for insertion and deletion.
+     In it space is not wasted.
+     It is less expensive.
+     It requires more space as pointers are also stored along with information.
+     Its size is not fixed.
+     It can be extended or reduced according to requirements.
+     Different amount of time is required to access each element.
+     Elements may or may not be stored in consecutive memory locations.
+     ---Array
+     Insertions and deletions are difficult.
+     It needs movements of elements for insertion and deletion.
+     In it space is wasted.
+     It is more expensive.
+     It requires less space as only information is stored.
+     Its size is fixed.
+     It can not be extended or reduced according to requirements.
+     Same amount of time is required to access each element.
+     Elements are stored in consecutive memory locations.
+     If have to go to a particular element then we can reach there directly.
+********************************************************************************************************************************************
+What is DFS and BFS?
+Ans: Breadth-first search is a tree traversal algorithm that visits the nodes of a tree level by level, increasing the depth after each row's traversal.
+     Depth-first search is an algorithm for traversing or searching tree or graph data structures. One starts at the root (selecting some node as the root in the graph case) and explores as far as possible along each branch before backtracking
+********************************************************************************************************************************************
+What is Recursion?
+Ans: Recursion is a basic programming technique you can use in Java, in which a method calls itself to solve some problem.
+A method that uses this technique is recursive. Many programming problems can be solved only by recursion, and some problems that can be solved by other techniques are better solved by recursion
+********************************************************************************************************************************************
+What is Big-(O)-notation?
+Ans: Big O notation is the language we use for articulating how long an algorithm takes to run. It's how we compare the efficiency of different approaches to a problem
+********************************************************************************************************************************************
+Outlined different kind of sorting algorithm with time complexity?
+Draw a table with time complexity in which it will summarize all the data structure feature's advantages and disadvantages.
+  a)In terms of Accessing element.
+  b)In terms of Inserting element.
+  c)In terms of Searching element.
+  d)In terms of Removing element.
+
+  Ans:
+  Advantages And disadvantages of sorting
+
+  Bubble Sort:
+  Advantages-
+  The primary advantage of the bubble sort is that it is popular and easy to implement.
+  The main disadvantage of the bubble sort is the fact that it does not deal well with a list containing a huge number of items.
+  In the bubble sort, elements are swapped in place without using additional temporary storage.
+   Disadvantages-
+  The bubble sort requires n-squared processing steps for every n number of elements to be sorted.
+  The space requirement is at a minimum
+  The bubble sort is mostly suitable for academic teaching but not for real-life applications.
+
+
+  Insertion Sort:
+  Advantages-
+  The main advantage of the insertion sort is its simplicity.
+  The disadvantage of the insertion sort is that it does not perform as well as other, better sorting algorithms
+  It also exhibits a good performance when dealing with a small list.
+   Disadvantages-
+  With n-squared steps required for every n element to be sorted, the insertion sort does not deal well with a huge list.
+  The insertion sort is an in-place sorting algorithm so the space requirement is minimal.
+  The insertion sort is particularly useful only when sorting a list of few items.
+
+  Selection Sort:
+  Advantages-
+  The main advantage of the selection sort is that it performs well on a small list.
+  The primary disadvantage of the selection sort is its poor efficiency when dealing with a huge list of items.
+  Because it is an in-place sorting algorithm, no additional temporary storage is required beyond what is needed to hold the original list.
+  Disadvantages-
+  The selection sort requires n-squared number of steps for sorting n elements.
+  Its performance is easily influenced by the initial ordering of the items before the sorting process.
+  Quick Sort is much more efficient than selection sort
+
+  Quick Sort:
+  Advantages-
+  The quick sort is regarded as the best sorting algorithm.
+  The slight disadvantage of quick sort is that its worst-case performance is similar to average performances of the bubble, insertion or selections sorts.
+  It is able to deal well with a huge list of items.
+  Disadvantages-
+  If the list is already sorted than bubble sort is much more efficient than quick sort
+  Because it sorts in place, no additional storage is required as well
+  If the sorting element is integers than radix sort is more efficient than quick sort.
+
+
+  Heap sort:
+  Advantages-
+  The Heap sort algorithm is widely used because of its efficiency.
+  Heap sort requires more space for sorting
+  The Heap sort algorithm can be implemented as an in-place sorting algorithm
+  Disadvantages-
+  Quick sort is much more efficient than Heap in many cases
+  its memory usage is minimal
+  Heap sort make a tree of sorting elements.
+
+  Merge Sort:
+
+  Advantages-
+  It can be applied to files of any size.
+  Requires extra space »N
+  Reading of the input during the run-creation step is sequential ==> Not much seeking.
+  Disadvantages-
+  Merge Sort requires more space than other sort.
+  If heap sort is used for the in-memory part of the merge, its operation can be overlapped with I/O
+  Merge sort is less efficient than other sort
+
+********************************************************************************************************************************************
